@@ -1,0 +1,39 @@
+{
+  "name": "gulp-blade",
+  "description": "Blade plugin for Gulp (gulpjs.com)",
+  "version": "0.0.1",
+  "homepage": "http://github.com/stevelacy/gulp-blade",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stevelacy/gulp-blade.git"
+  },
+  "author": "Steve Lacy me@slacy.me (slacy.me)",
+  "main": "./index.js",
+  "dependencies": {
+    "gulp-util": "*",
+    "event-stream": "*",
+    "blade": "~3.3.0",
+    "map-stream": "0.0.4"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "gulp-plugin"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/stevelacy/gulp-blade/raw/master/LICENSE"
+    }
+  ]
+}
