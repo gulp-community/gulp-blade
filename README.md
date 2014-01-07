@@ -30,7 +30,20 @@ npm install gulp-blade --save
 ##Example
 
 ```javascript
-EXAMPLEHERE
+
+var gulp = require('gulp');
+var blade = require('../');
+
+gulp.task('compile', function(){
+  gulp.src('./in.blade')
+  .pipe(blade())
+  .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', function(){
+  gulp.run('compile');
+});
+
 ```
 
 ####You can view more examples in the [example folder.](https://github.com/stevelacy/gulp-blade/tree/master/examples)
