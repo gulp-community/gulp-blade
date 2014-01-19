@@ -7,7 +7,7 @@
     "type": "git",
     "url": "http://github.com/stevelacy/gulp-blade.git"
   },
-  "author": "Steve Lacy me@slacy.me (slacy.me)",
+  "author": "Steve Lacy me@slacy.me (http://slacy.me)",
   "main": "./index.js",
   "dependencies": {
     "gulp-util": "*",
