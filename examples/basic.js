@@ -3,6 +3,7 @@ function anonymous(locals, cb, __) {
     __.r = __.r || blade.Runtime;
     if (!__.func) __.func = {}, __.blocks = {}, __.chunk = {};
     __.locals = locals || {};
+    __.filename = "/www/node/gulp-blade/examples/basic.blade";
     try {
         with (__.locals) {
             __.line = 1, __.col = 1;

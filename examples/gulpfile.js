@@ -2,11 +2,9 @@ var gulp = require('gulp');
 var blade = require('../');
 
 gulp.task('compile', function(){
-  gulp.src('./in.blade')
+  gulp.src('*.blade')
   .pipe(blade())
   .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', function(){
-  gulp.run('compile');
-});
+gulp.task('default', ['compile']);
