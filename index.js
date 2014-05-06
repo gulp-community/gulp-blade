@@ -1,33 +1,32 @@
 var map = require('map-stream');
-var gutil = require('gulp-util');
+var rext = require('replace-ext');
 var blade = require('blade');
 
 module.exports = function(options) {
-  if(!options) options = {};
+  if (!options) options = {};
 
   function modifyContents(file, cb) {
-    if (file.isNull())
-      return cb(null, file) // pass along
-    if (file.isStream())
-      return cb(new Error("gulp-blade: Streaming not supported"))
+    if (file.isNull()) return cb(null, file);
+    if (file.isStream()) return cb(new Error('gulp-blade: Streaming not supported'));
 
     var localOptions = {
       filename: file.path,  // required for blade includes
-      basedir: file.base    // typically where a glob starts
+      basedir: file.base  // typically where a glob starts
+    };
+
+    for (var k in options) {
+      localOptions[k] = options[k];
     }
 
-    for(var k in options)
-      localOptions[k] = options[k]
-
-    blade.compile(file.contents.toString(), localOptions, function(err, res){
-      if(err) return cb(err);
+    blade.compile(file.contents.toString(), localOptions, function(err, res) {
+      if (err) return cb(err);
 
       file.contents = new Buffer(res.toString());
-      file.path = gutil.replaceExtension(file.path, '.js');
+      file.path = rext(file.path, '.js');
 
       cb(null, file);
     });
   }
 
   return map(modifyContents);
-}
+};
