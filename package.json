@@ -1,7 +1,7 @@
 {
   "name": "gulp-blade",
   "description": "Blade plugin for Gulp (gulpjs.com)",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "http://github.com/stevelacy/gulp-blade",
   "repository": {
     "type": "git",
@@ -10,11 +10,12 @@
   "author": "Steve Lacy <me@slacy.me> (http://slacy.me)",
   "main": "./index.js",
   "dependencies": {
-    "gulp-util": "~2.2.12",
-    "blade": "~3.3.0",
-    "map-stream": "~0.1.0"
+    "blade": "^3.3.0",
+    "map-stream": "^0.1.0",
+    "replace-ext": "0.0.1"
   },
   "devDependencies": {
+    "gulp-util": "^2.2.14",
     "mocha": "*",
     "should": "*"
   },
@@ -27,7 +28,8 @@
   "keywords": [
     "gulp",
     "gulpplugin",
-    "gulp-plugin"
+    "gulp-plugin",
+    "blade"
   ],
   "licenses": [
     {

@@ -43,7 +43,8 @@ gulp.task('compile', function(){
 });
 
 ```
-**Note**: this will expose the full path to the source file in the compiled templates. To [mask the basedir](https://github.com/bminer/node-blade#api), set `middleware` to `true`.
+**Note**: this will expose the full path to the source file in the compiled templates.
+To [mask the basedir](https://github.com/bminer/node-blade#api), set `middleware` to `true`.
 
 ```javascript
 blade({
