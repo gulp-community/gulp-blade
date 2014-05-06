@@ -9,7 +9,10 @@ require('mocha');
 describe('gulp-blade', function() {
 
   it('should compile blade files to js function templates', function(done) {
-    var b = blade();
+    var b = blade({
+      middleware: true
+    });
+    
     var fakeFile = new gutil.File({
       base: "test/",
       cwd: "test/",

@@ -1,4 +1,4 @@
-#gulp-blade
+# gulp-blade
 [![Build Status](https://travis-ci.org/stevelacy/gulp-blade.png?branch=master)](https://travis-ci.org/stevelacy/gulp-blade)
 [![NPM version](https://badge.fury.io/js/gulp-blade.png)](http://badge.fury.io/js/gulp-blade)
 
@@ -29,26 +29,29 @@
 ```
 npm install gulp-blade --save
 ```
-##Example
+## Example
 
 ```javascript
 
 var gulp = require('gulp');
-var blade = require('../');
+var blade = require('gulp-blade');
 
 gulp.task('compile', function(){
-  gulp.src('./in.blade')
-  .pipe(blade())
-  .pipe(gulp.dest('./'));
-});
-
-gulp.task('default', function(){
-  gulp.run('compile');
+  gulp.src('*.blade')
+    .pipe(blade())
+    .pipe(gulp.dest('views'))
 });
 
 ```
+**Note**: this will expose the full path to the source file in the compiled templates. To [mask the basedir](https://github.com/bminer/node-blade#api), set `middleware` to `true`.
 
-####You can view more examples in the [example folder.](https://github.com/stevelacy/gulp-blade/tree/master/examples)
+```javascript
+blade({
+  middleware: true
+})
+```
+
+#### You can view more examples in the [example folder.](https://github.com/stevelacy/gulp-blade/tree/master/examples)
 
 
 
