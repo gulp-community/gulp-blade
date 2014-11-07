@@ -2,15 +2,15 @@
 [![Build Status](https://travis-ci.org/stevelacy/gulp-blade.png?branch=master)](https://travis-ci.org/stevelacy/gulp-blade)
 [![NPM version](https://badge.fury.io/js/gulp-blade.png)](http://badge.fury.io/js/gulp-blade)
 
-> Compile [Blade](https://github.com/bminer/node-blade) templates with Gulp
+> Compile [Blade](https://github.com/bminer/node-blade) templates with gulp
 
 <table>
-<tr> 
+<tr>
 <td>Package</td><td>gulp-blade</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>Blade plugin for Gulp (gulpjs.com)</td>
+<td>Blade plugin for gulp (gulpjs.com)</td>
 </tr>
 <tr>
 <td>Node Version</td>

@@ -1,6 +1,6 @@
 {
   "name": "gulp-blade",
-  "description": "Blade plugin for Gulp (gulpjs.com)",
+  "description": "Blade plugin for gulp (gulpjs.com)",
   "version": "0.0.5",
   "homepage": "http://github.com/stevelacy/gulp-blade",
   "repository": {
