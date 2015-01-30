@@ -12,7 +12,7 @@ describe('gulp-blade', function() {
     var b = blade({
       middleware: true
     });
-    
+
     var fakeFile = new gutil.File({
       base: "test/",
       cwd: "test/",
