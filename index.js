@@ -1,11 +1,12 @@
-var map = require('map-stream');
+var through = require('through2');
 var rext = require('replace-ext');
 var blade = require('blade');
 
 module.exports = function(options) {
   if (!options) options = {};
 
-  function modifyContents(file, cb) {
+  return through.obj(function (file, enc, cb) {
+
     if (file.isNull()) return cb(null, file);
     if (file.isStream()) return cb(new Error('gulp-blade: Streaming not supported'));
 
@@ -26,7 +27,5 @@ module.exports = function(options) {
 
       cb(null, file);
     });
-  }
-
-  return map(modifyContents);
+  });
 };

@@ -11,11 +11,11 @@
   "main": "./index.js",
   "dependencies": {
     "blade": "^3.3.0",
-    "map-stream": "^0.1.0",
-    "replace-ext": "0.0.1"
+    "replace-ext": "0.0.1",
+    "through2": "^0.6.5"
   },
   "devDependencies": {
-    "gulp-util": "^2.2.14",
+    "gulp-util": "^3.0.4",
     "mocha": "*",
     "should": "*"
   },
