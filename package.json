@@ -31,10 +31,5 @@
     "gulp-plugin",
     "blade"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/stevelacy/gulp-blade/raw/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }
