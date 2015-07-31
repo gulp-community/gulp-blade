@@ -12,12 +12,12 @@
   "dependencies": {
     "blade": "^3.3.0",
     "replace-ext": "0.0.1",
-    "through2": "^0.6.5"
+    "through2": "^2.0.0"
   },
   "devDependencies": {
-    "gulp-util": "^3.0.4",
+    "gulp-util": "^3.0.6",
     "mocha": "*",
-    "should": "*"
+    "should": "^7.0.2"
   },
   "scripts": {
     "test": "mocha"
